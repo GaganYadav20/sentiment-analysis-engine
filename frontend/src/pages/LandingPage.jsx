@@ -235,7 +235,7 @@ export default function LandingPage() {
             <Link to="/dashboard" className="btn-primary" style={{ fontSize: '1rem', padding: '0.875rem 2rem' }}>
               Try Demo <ArrowRight size={18} />
             </Link>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.875rem 2rem' }}>
+            <a href="https://github.com/GaganYadav20/sentiment-analysis-engine" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.875rem 2rem' }}>
               View GitHub
             </a>
             <Link to="/analytics" className="btn-secondary" style={{ fontSize: '1rem', padding: '0.875rem 2rem' }}>
