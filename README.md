@@ -20,14 +20,14 @@
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| **Frontend** | React 19 · Vite · Tailwind CSS v4 · Framer Motion · Recharts · Lucide Icons |
-| **Backend** | FastAPI · Python 3.11 · SQLAlchemy · Pydantic · Uvicorn |
-| **ML/AI** | HuggingFace Transformers · PyTorch · BERT · Trainer API |
-| **Database** | SQLite (dev) / PostgreSQL (production) |
-| **Auth** | JWT (python-jose) · bcrypt (passlib) |
-| **Deployment** | Docker · Vercel · Render/Railway · GitHub Actions |
+| Layer          | Technology                                                                  |
+| -------------- | --------------------------------------------------------------------------- |
+| **Frontend**   | React 19 · Vite · Tailwind CSS v4 · Framer Motion · Recharts · Lucide Icons |
+| **Backend**    | FastAPI · Python 3.11 · SQLAlchemy · Pydantic · Uvicorn                     |
+| **ML/AI**      | HuggingFace Transformers · PyTorch · BERT · Trainer API                     |
+| **Database**   | SQLite (dev) / PostgreSQL (production)                                      |
+| **Auth**       | JWT (python-jose) · bcrypt (passlib)                                        |
+| **Deployment** | Docker · Vercel · Render/Railway · GitHub Actions                           |
 
 ---
 
@@ -121,16 +121,16 @@ Frontend runs at `http://localhost:5173`.
 
 ## 📡 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/predict` | Analyze sentiment of a single text |
-| `POST` | `/upload-csv` | Upload CSV for batch analysis |
-| `GET` | `/analytics` | Get aggregated analytics data |
-| `GET` | `/history` | Get prediction history (paginated) |
-| `GET` | `/health` | API and model health check |
-| `POST` | `/auth/register` | Register new user |
-| `POST` | `/auth/login` | Authenticate and get JWT |
-| `GET` | `/auth/me` | Get current user profile |
+| Method | Endpoint         | Description                        |
+| ------ | ---------------- | ---------------------------------- |
+| `POST` | `/predict`       | Analyze sentiment of a single text |
+| `POST` | `/upload-csv`    | Upload CSV for batch analysis      |
+| `GET`  | `/analytics`     | Get aggregated analytics data      |
+| `GET`  | `/history`       | Get prediction history (paginated) |
+| `GET`  | `/health`        | API and model health check         |
+| `POST` | `/auth/register` | Register new user                  |
+| `POST` | `/auth/login`    | Authenticate and get JWT           |
+| `GET`  | `/auth/me`       | Get current user profile           |
 
 ### Example Request
 
@@ -248,14 +248,14 @@ docker-compose up --build
 
 ## 📊 Model Details
 
-| Attribute | Value |
-|-----------|-------|
-| Base Model | `bert-base-uncased` (110M parameters) |
-| Inference Model | `nlptown/bert-base-multilingual-uncased-sentiment` |
-| Task | Multi-class sequence classification |
-| Classes | Positive, Neutral, Negative |
-| Max Sequence Length | 512 tokens |
-| Framework | PyTorch + HuggingFace Transformers |
+| Attribute           | Value                                              |
+| ------------------- | -------------------------------------------------- |
+| Base Model          | `bert-base-uncased` (110M parameters)              |
+| Inference Model     | `nlptown/bert-base-multilingual-uncased-sentiment` |
+| Task                | Multi-class sequence classification                |
+| Classes             | Positive, Neutral, Negative                        |
+| Max Sequence Length | 512 tokens                                         |
+| Framework           | PyTorch + HuggingFace Transformers                 |
 
 ---
 
@@ -283,6 +283,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 <p align="center">
   sentiment-analysis-engine
 </p>
-#   s e n t i m e n t - a n a l y s i s - e n g i n e 
- 
- 
+
