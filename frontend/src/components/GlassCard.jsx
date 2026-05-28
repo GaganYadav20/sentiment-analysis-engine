@@ -1,0 +1,18 @@
+import { motion } from 'framer-motion'
+
+export default function GlassCard({ children, className = '', style = {}, delay = 0, hover = true, ...props }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay }}
+      whileHover={hover ? { y: -4, transition: { duration: 0.2 } } : {}}
+      className={`glass-card ${className}`}
+      style={{ padding: '1.5rem', ...style }}
+      {...props}
+    >
+      {children}
+    </motion.div>
+  )
+}
